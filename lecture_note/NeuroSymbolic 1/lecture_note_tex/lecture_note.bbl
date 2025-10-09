@@ -1,0 +1,25 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Johnson et~al.(2017{\natexlab{a}})Johnson, Hariharan, van~der Maaten, Fei-Fei, Zitnick, and Girshick]{Johnson2017a}
+Justin Johnson, Bharath Hariharan, Laurens van~der Maaten, Li~Fei-Fei, C.~Lawrence Zitnick, and Ross Girshick.
+\newblock {CLEVR}: A diagnostic dataset for compositional language and elementary visual reasoning.
+\newblock In \emph{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 2017{\natexlab{a}}.
+
+\bibitem[Johnson et~al.(2017{\natexlab{b}})Johnson, Hariharan, van~der Maaten, Hoffman, Fei-Fei, Zitnick, and Girshick]{Johnson2017b}
+Justin Johnson, Bharath Hariharan, Laurens van~der Maaten, Judy Hoffman, Li~Fei-Fei, C.~Lawrence Zitnick, and Ross Girshick.
+\newblock Inferring and executing programs for visual reasoning.
+\newblock In \emph{IEEE International Conference on Computer Vision (ICCV)}, 2017{\natexlab{b}}.
+
+\bibitem[Yi et~al.(2018)Yi, Wu, Gan, Torralba, Kohli, and Tenenbaum]{Yi2018}
+Kexin Yi, Jiajun Wu, Chuang Gan, Antonio Torralba, Pushmeet Kohli, and Joshua~B. Tenenbaum.
+\newblock Neural-symbolic {VQA}: Disentangling reasoning from vision and language understanding.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2018.
+\newblock URL \url{https://arxiv.org/abs/1810.02338}.
+\newblock arXiv:1810.02338.
+
+\end{thebibliography}

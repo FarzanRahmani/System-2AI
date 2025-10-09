@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction and Motivation}{2}{section.1}%
+\contentsline {section}{\numberline {2}Concepts: The Building Blocks of Semantics}{2}{section.2}%
+\contentsline {section}{\numberline {3}Initial Idea: Logic Rules Based on Concepts}{3}{section.3}%
+\contentsline {section}{\numberline {4}Concept Embeddings: Representing Concepts in a Vector Space}{3}{section.4}%
+\contentsline {section}{\numberline {5}Learning Concept Existence: A Deep Model}{4}{section.5}%
+\contentsline {section}{\numberline {6}Rule Learning: Extracting Logical Relationships}{4}{section.6}%
+\contentsline {section}{\numberline {7}Making it Differentiable: Continuous Logic}{5}{section.7}%
+\contentsline {section}{\numberline {8}Rule Parsimony and Fuzzy Semantics}{6}{section.8}%
+\contentsline {section}{\numberline {9}Experimental Evaluation and Key Findings}{7}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Generalization}{7}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Interpretability}{7}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Counterfactual Explanations}{7}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Global and Counterfactual Explanations}{8}{section.10}%
+\contentsline {section}{\numberline {11}DCR and Neuro-Symbolic Architecture}{8}{section.11}%
+\contentsline {section}{\numberline {12}Limitations and Future Directions}{8}{section.12}%
+\contentsline {section}{\numberline {13}Conclusion}{9}{section.13}%

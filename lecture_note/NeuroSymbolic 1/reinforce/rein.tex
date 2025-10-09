@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Question Parser Training}
+
+\begin{itemize}
+    \item Pre-training with 100-300 question-program pairs for 20k iterations.
+    \item Post-training with 9K-700k questions-solution pairs for 2M iterations with early stopping.
+    \item Reward: 1 if program execution leads to correct answer; 0 otherwise.
+    \item REINFORCE as the training algorithm.
+\end{itemize}
+
+\section*{REINFORCE}
+
+Optimizing the expected return \( J(\theta) \):
+
+\begin{equation}
+\theta^{\star} = \arg \max_{\theta} J(\theta) = \arg \max_{\theta} E_{\tau \sim p_{\theta}(\tau)} \left[ \sum_{t} r(\mathbf{s}_{t}, \mathbf{a}_{t}) \right]
+\end{equation}
+
+\begin{equation}
+J(\theta) = E_{\tau \sim p_{\theta}(\tau)} [r(\tau)] = E_{\tau \sim p_{\theta}(\tau)} [\sum_{t=1}^{T} r(\mathbf{s}_{t}, \mathbf{a}_{t})] = \int p_{\theta}(\tau) r(\tau) d\tau
+\end{equation}
+
+\begin{equation}
+\nabla_{\theta} J(\theta) = \int \nabla_{\theta} p_{\theta}(\tau) r(\tau) d\tau = \int \frac{p_{\theta}(\tau)}{p_{\theta}(\tau)} \nabla_{\theta} p_{\theta}(\tau) r(\tau) d\tau
+\end{equation}
+\begin{equation}
+\nabla_{\theta} J(\theta) = \int p_{\theta}(\tau) \frac{\nabla_{\theta} p_{\theta}(\tau)}{p_{\theta}(\tau)}  r(\tau) d\tau = \int p_{\theta}(\tau) \nabla_{\theta} \log p_{\theta}(\tau) r(\tau) d\tau 
+\end{equation}
+\begin{equation}
+\nabla_{\theta} J(\theta) = E_{\tau \sim p_{\theta}(\tau)} \left[ \nabla_{\theta} \log p_{\theta}(\tau) r(\tau) \right]
+\end{equation}
+
+\section*{REINFORCE (cont.)}
+
+\begin{equation}
+p_{\theta}(\tau) = p_{\theta}(\mathbf{s}_{1},\mathbf{a}_{1},...,\mathbf{s}_{T},\mathbf{a}_{T})=p(\mathbf{s}_{1})\prod_{t=1}^{T}\pi_{\theta}(\mathbf{a}_{t}|\mathbf{s}_{t})p(\mathbf{s}_{t+1}|\mathbf{s}_{t},\mathbf{a}_{t})
+\end{equation}
+
+we take log of both sides. 
+
+\begin{equation}
+\log p_{\theta}(\tau) = \log p(\mathbf{s}_{1}) + \sum_{t=1}^{T} \log \pi_{\theta}(\mathbf{a}_{t} \mid \mathbf{s}_{t}) + \log p(\mathbf{s}_{t+1} \mid \mathbf{s}_{t}, \mathbf{a}_{t})
+\end{equation}
+
+\section*{REINFORCE (cont.)}
+
+\begin{align}
+& \theta^{\star} = \arg \max_{\theta} J(\theta) \\
+& J(\theta) = E_{\tau \sim p_{\theta}(\tau)} [r(\tau)] \\
+& \nabla_{\theta} J(\theta) = E_{\tau \sim p_{\theta}(\tau)} \left[ \nabla_{\theta} \log p_{\theta}(\tau) r(\tau) \right]
+\end{align}
+
+\begin{equation}
+    \nabla_{\theta} J(\theta) = E_{\tau \sim p_{\theta}(\tau)} \left[ \nabla_{\theta}\left[\log p(s_{1})+\sum_{t=1}^{T}\log \pi_{\theta}(a_{t}|s_{t})+\log p(s_{t+1}|s_{t},a_{t})\right] r(\tau) \right]
+\end{equation}
+
+\begin{equation}
+\nabla_{\theta} J(\theta) = E_{\tau \sim p_{\theta}(\tau)} \left[ \left( \sum_{t=1}^{T} \nabla_{\theta} \log \pi_{\theta}(\mathbf{a}_{t} \mid \mathbf{s}_{t}) \right) \left( \sum_{t=1}^{T} r(\mathbf{s}_{t}, \mathbf{a}_{t}) \right) \right]
+\end{equation}
+
+\section*{REINFORCE (cont.)}
+
+\begin{equation}
+\nabla_{\theta} J(\theta) \approx \frac{1}{N} \sum_{i=1}^{N} \left( \sum_{t=1}^{T} \nabla_{\theta} \log \pi_{\theta}(\mathbf{a}_{i, t} \mid \mathbf{s}_{i, t}) \right) \left( \sum_{t=1}^{T} r(\mathbf{s}_{i, t}, \mathbf{a}_{i, t}) \right)
+\end{equation}
+
+\begin{equation}
+\theta \leftarrow \theta + \alpha \nabla_{\theta} J(\theta)
+\end{equation}
+
+\section*{REINFORCE (cont.)}
+
+REINFORCE algorithm:
+
+\begin{enumerate}
+    \item Sample \(\{\tau^{i}\}\) from \(\pi_{\theta}(\mathbf{a}_{t} \mid \mathbf{s}_{t})\) (run the policy).
+    \item \(\nabla_{\theta} J(\theta) \approx \sum_{i} \left( \sum_{t} \nabla_{\theta} \log \pi_{\theta}(\mathbf{a}_{t}^{i} \mid \mathbf{s}_{t}^{i}) \right) \left( \sum_{t} r(\mathbf{s}_{t}^{i}, \mathbf{a}_{t}^{i}) \right)\).
+    \item \(\theta \leftarrow \theta + \alpha \nabla_{\theta} J(\theta)\).
+\end{enumerate}
+
+\section*{REINFORCE (cont.)}
+
+\begin{itemize}
+    \item Generate samples (i.e., run the policy).
+    \item Fit a model to estimate return.
+    \item Improve the policy.
+\end{itemize}
+
+\end{document}

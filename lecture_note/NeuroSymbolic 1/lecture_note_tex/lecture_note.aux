@@ -1,0 +1,69 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Yi2018}
+\citation{Johnson2017a}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Human reasoning is interpretable and disentangled: we first draw abstract knowledge of the scene via visual perception and then perform logic reasoning on it. This enables compositional, accurate, and generalizable reasoning in rich visual contexts.}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:f1}{{1}{2}{Human reasoning is interpretable and disentangled: we first draw abstract knowledge of the scene via visual perception and then perform logic reasoning on it. This enables compositional, accurate, and generalizable reasoning in rich visual contexts}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}The CLEVR Diagnostic Dataset}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Motivation}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Design Principles}{2}{subsection.2.2}\protected@file@percent }
+\citation{Johnson2017a}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A field guide to the CLEVR universe. Left: Shapes, attributes, and spatial relationships. Center: Examples of questions and their associated functional programs. Right: Catalog of basic functions used to build questions.}}{3}{figure.2}\protected@file@percent }
+\newlabel{fig:f2}{{2}{3}{A field guide to the CLEVR universe. Left: Shapes, attributes, and spatial relationships. Center: Examples of questions and their associated functional programs. Right: Catalog of basic functions used to build questions}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Dataset Statistics}{3}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Analysis of VQA Models on CLEVR}{3}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Core Idea: Disentangling Perception from Reasoning}{3}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The model has three components: first, a scene parser (de-renderer) that segments an input image (a-b) and recovers a structural scene representation (c); second, a question parser (program generator) that converts a question in natural language (d) into a program (e); third, a program executor that runs the program on the structural scene representation to obtain the answer.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:f3}{{3}{4}{The model has three components: first, a scene parser (de-renderer) that segments an input image (a-b) and recovers a structural scene representation (c); second, a question parser (program generator) that converts a question in natural language (d) into a program (e); third, a program executor that runs the program on the structural scene representation to obtain the answer}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Architecture Overview}{4}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Scene Parser (De-renderer)}{4}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Question Parser (Program Generator)}{4}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Program Executor}{5}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Question Parser Architecture Details}{5}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Encoder (Bidirectional LSTM)}{5}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Decoder (LSTM with Attention)}{5}{subsection.5.2}\protected@file@percent }
+\citation{Yi2018}
+\citation{Yi2018}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Training the Modules}{6}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Scene Parser Training}{6}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Question Parser Training}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The model exhibits high data efficiency while achieving state-of-the-art performance and preserving interpretability. (a) QA accuracy vs. number of programs used for pretraining; different curves indicate different numbers of question-answer pairs used in the REINFORCE stage. (c) QA accuracy vs. total number of training question-answer pairs; our model is pretrained on 270 programs.}}{7}{figure.4}\protected@file@percent }
+\newlabel{fig:f4}{{4}{7}{The model exhibits high data efficiency while achieving state-of-the-art performance and preserving interpretability. (a) QA accuracy vs. number of programs used for pretraining; different curves indicate different numbers of question-answer pairs used in the REINFORCE stage. (c) QA accuracy vs. total number of training question-answer pairs; our model is pretrained on 270 programs}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}REINFORCE Algorithm Details}{7}{section.7}\protected@file@percent }
+\newlabel{sec:reinforce}{{7}{7}{REINFORCE Algorithm Details}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Question Parser Training}{7}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}REINFORCE Fundamentals}{7}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Gradient Derivation}{7}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Trajectory Probability}{8}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Final Gradient Expression}{8}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Monte Carlo Implementation}{8}{subsection.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Parameter Update}{8}{subsection.7.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.8}Algorithm Steps}{8}{subsection.7.8}\protected@file@percent }
+\citation{Yi2018}
+\citation{Yi2018}
+\citation{Johnson2017b}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.9}Variance Reduction}{9}{subsection.7.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Key Advantages and Results}{9}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Robustness to Long Program Traces and Complex Reasoning}{9}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Data and Memory Efficiency}{9}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Transparency and Interpretability}{9}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Generalization Capabilities}{9}{subsection.8.4}\protected@file@percent }
+\citation{Yi2018}
+\citation{Johnson2017b}
+\citation{Johnson2017b}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The model also applies to Minecraft, a world with rich and hierarchical scene context and different visual appearance.}}{10}{figure.5}\protected@file@percent }
+\newlabel{fig:f5}{{5}{10}{The model also applies to Minecraft, a world with rich and hierarchical scene context and different visual appearance}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Qualitative results on CLEVR. Blue color indicates correct program modules and answers; red indicates wrong ones. The model is able to robustly recover the correct programs compared to the IEP baseline \cite  {Johnson2017b}.}}{10}{figure.6}\protected@file@percent }
+\newlabel{fig:f6}{{6}{10}{Qualitative results on CLEVR. Blue color indicates correct program modules and answers; red indicates wrong ones. The model is able to robustly recover the correct programs compared to the IEP baseline \cite {Johnson2017b}}{figure.6}{}}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{Johnson2017a}{{1}{2017{}}{{Johnson et~al.}}{{Johnson, Hariharan, van~der Maaten, Fei-Fei, Zitnick, and Girshick}}}
+\bibcite{Johnson2017b}{{2}{2017{}}{{Johnson et~al.}}{{Johnson, Hariharan, van~der Maaten, Hoffman, Fei-Fei, Zitnick, and Girshick}}}
+\bibcite{Yi2018}{{3}{2018}{{Yi et~al.}}{{Yi, Wu, Gan, Torralba, Kohli, and Tenenbaum}}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Generalization results on CLEVR-CoGenT.}}{11}{table.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Question answering accuracy on CLEVR-Humans.}}{11}{table.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Conclusion and Future Directions}{11}{section.9}\protected@file@percent }
+\gdef \@abspage@last{11}

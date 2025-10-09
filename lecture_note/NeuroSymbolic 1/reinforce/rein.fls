@@ -1,0 +1,36 @@
+PWD E:/sharif uni/2nd term/System-2 AI/lecture_note/NeuroSymbolic 1/reinforce
+INPUT d:/texlive/2024/texmf.cnf
+INPUT d:/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT d:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT e:/sharif uni/2nd term/System-2 AI/lecture_note/NeuroSymbolic 1/reinforce/rein.tex
+OUTPUT rein.log
+INPUT d:/texlive/2024/texmf-dist/tex/latex/base/article.cls
+INPUT d:/texlive/2024/texmf-dist/tex/latex/base/article.cls
+INPUT d:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+INPUT d:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+INPUT d:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT d:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT ./rein.aux
+INPUT ./rein.aux
+INPUT rein.aux
+OUTPUT rein.aux
+INPUT d:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm

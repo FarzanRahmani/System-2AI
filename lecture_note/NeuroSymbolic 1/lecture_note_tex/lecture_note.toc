@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}The CLEVR Diagnostic Dataset}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Motivation}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Design Principles}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Dataset Statistics}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Analysis of VQA Models on CLEVR}{3}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Core Idea: Disentangling Perception from Reasoning}{3}{section.3}%
+\contentsline {section}{\numberline {4}Architecture Overview}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Scene Parser (De-renderer)}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Question Parser (Program Generator)}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Program Executor}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Question Parser Architecture Details}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Encoder (Bidirectional LSTM)}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Decoder (LSTM with Attention)}{5}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Training the Modules}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Scene Parser Training}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Question Parser Training}{6}{subsection.6.2}%
+\contentsline {section}{\numberline {7}REINFORCE Algorithm Details}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Question Parser Training}{7}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}REINFORCE Fundamentals}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Gradient Derivation}{7}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Trajectory Probability}{8}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Final Gradient Expression}{8}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Monte Carlo Implementation}{8}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Parameter Update}{8}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Algorithm Steps}{8}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Variance Reduction}{9}{subsection.7.9}%
+\contentsline {section}{\numberline {8}Key Advantages and Results}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Robustness to Long Program Traces and Complex Reasoning}{9}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Data and Memory Efficiency}{9}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Transparency and Interpretability}{9}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Generalization Capabilities}{9}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Conclusion and Future Directions}{11}{section.9}%

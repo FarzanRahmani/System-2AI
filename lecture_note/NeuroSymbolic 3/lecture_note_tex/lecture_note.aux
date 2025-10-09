@@ -1,0 +1,67 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{dcr}
+\citation{dcr}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Can we build models that are both inherently interpretable and highly accurate?}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:f1}{{1}{2}{Can we build models that are both inherently interpretable and highly accurate?}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction and Motivation}{2}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Concepts: The Building Blocks of Semantics}{2}{section.2}\protected@file@percent }
+\citation{dcr}
+\citation{cem}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Decomposing inputs into a set of concepts.}}{3}{figure.2}\protected@file@percent }
+\newlabel{fig:f2}{{2}{3}{Decomposing inputs into a set of concepts}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Initial Idea: Logic Rules Based on Concepts}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Concept Embeddings: Representing Concepts in a Vector Space}{3}{section.4}\protected@file@percent }
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Concept Embedding Model}: from an intermediate latent code $h$, we learn two embeddings per concept, one for when it is active (i.e., $\hat  {c}^+_i$), and another when it is inactive (i.e., $\hat  {c}^-_i$). Each concept embedding (shown in this example as a vector with $m = 2$ activations) is then aligned to its corresponding ground truth concept through the scoring function $s(\cdot )$, which learns to assign activation probabilities $\hat  {p}_i$ for each concept. These probabilities are used to output an embedding for each concept via a weighted mixture of each concept's positive and negative embedding.}}{4}{figure.3}\protected@file@percent }
+\newlabel{fig:f3}{{3}{4}{\textbf {Concept Embedding Model}: from an intermediate latent code $h$, we learn two embeddings per concept, one for when it is active (i.e., $\hat {c}^+_i$), and another when it is inactive (i.e., $\hat {c}^-_i$). Each concept embedding (shown in this example as a vector with $m = 2$ activations) is then aligned to its corresponding ground truth concept through the scoring function $s(\cdot )$, which learns to assign activation probabilities $\hat {p}_i$ for each concept. These probabilities are used to output an embedding for each concept via a weighted mixture of each concept's positive and negative embedding}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Learning Concept Existence: A Deep Model}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Rule Learning: Extracting Logical Relationships}{4}{section.6}\protected@file@percent }
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\citation{dcr}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces (left) Deep Concept Reasoner (DCR) generates fuzzy logic rules using neural models on concept embeddings. Then DCR executes the rule using the concept truth degrees to evaluate the rule symbolically. (right) Schema of DCR modules: first neural models $\phi $ and $\psi $ generate the rule, and then the rule is executed symbolically.}}{5}{figure.4}\protected@file@percent }
+\newlabel{fig:f4}{{4}{5}{(left) Deep Concept Reasoner (DCR) generates fuzzy logic rules using neural models on concept embeddings. Then DCR executes the rule using the concept truth degrees to evaluate the rule symbolically. (right) Schema of DCR modules: first neural models $\phi $ and $\psi $ generate the rule, and then the rule is executed symbolically}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Making it Differentiable: Continuous Logic}{5}{section.7}\protected@file@percent }
+\citation{dcr}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces An example of rule learning.}}{6}{figure.5}\protected@file@percent }
+\newlabel{fig:f5}{{5}{6}{An example of rule learning}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Some of the fuzzy logic operators.}}{6}{figure.6}\protected@file@percent }
+\newlabel{fig:f6}{{6}{6}{Some of the fuzzy logic operators}{figure.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Rule Parsimony and Fuzzy Semantics}{6}{section.8}\protected@file@percent }
+\citation{dcr}
+\citation{dcr}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Mean ROC AUC for task predictions for all baselines across all tasks (the higher the better). DCR often outperforms interpretable concept-based models. CE stands for concept embeddings, while CT for concept truth degrees. Models trained on concept embeddings are not interpretable as concept embeddings lack a clear semantic for individual embedding dimensions.}}{7}{figure.7}\protected@file@percent }
+\newlabel{fig:f7}{{7}{7}{Mean ROC AUC for task predictions for all baselines across all tasks (the higher the better). DCR often outperforms interpretable concept-based models. CE stands for concept embeddings, while CT for concept truth degrees. Models trained on concept embeddings are not interpretable as concept embeddings lack a clear semantic for individual embedding dimensions}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Experimental Evaluation and Key Findings}{7}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Generalization}{7}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Interpretability}{7}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Counterfactual Explanations}{7}{subsection.9.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Error rate of Booleanised DCR rules w.r.t. ground truth rules. Error rate represents how often the label predicted by a Booleanised rule differs from the fuzzy rule generated by our model. The error rate is reported with the mean and standard error of the mean. A full list of logic rules for MNIST is in Appendix H of the "Interpretable Neural-Symbolic Concept Reasoning" paper \cite  {dcr}.}}{8}{table.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Global and Counterfactual Explanations}{8}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}DCR and Neuro-Symbolic Architecture}{8}{section.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {12}Limitations and Future Directions}{8}{section.12}\protected@file@percent }
+\citation{dcr}
+\citation{cem}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{dcr}{{1}{2023}{{Barbiero et~al.}}{{Barbiero, Ciravegna, Giannini, Zarlenga, Magister, Tonda, Lio, Precioso, Jamnik, and Marra}}}
+\bibcite{cem}{{2}{2022}{{Espinosa~Zarlenga et~al.}}{{Espinosa~Zarlenga, Barbiero, Ciravegna, Marra, Giannini, Diligenti, Shams, Precioso, Melacci, Weller, et~al.}}}
+\@writefile{toc}{\contentsline {section}{\numberline {13}Conclusion}{9}{section.13}\protected@file@percent }
+\gdef \@abspage@last{9}
